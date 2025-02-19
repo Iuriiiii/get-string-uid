@@ -9,7 +9,7 @@ The `getStringUid` function provides a simple way to generate numeric unique ide
 ## Installation
 
 ```bash
-# deno add jsr:@online/get-string-uid
+deno add jsr:@online/get-string-uid
 ```
 
 ## Usage
