@@ -1,10 +1,13 @@
 # String UID Generator
 
-A lightweight TypeScript utility for generating deterministic unique identifiers from strings.
+A lightweight TypeScript utility for generating deterministic unique identifiers
+from strings.
 
 ## Overview
 
-The `getStringUid` function provides a simple way to generate numeric unique identifiers from text strings. The function is deterministic, meaning it will always return the same number for the same input string.
+The `getStringUid` function provides a simple way to generate numeric unique
+identifiers from text strings. The function is deterministic, meaning it will
+always return the same number for the same input string.
 
 ## Installation
 
@@ -15,10 +18,10 @@ deno add jsr:@online/get-string-uid
 ## Usage
 
 ```typescript
-import { getStringUid } from '@online/get-string-uid';
+import { getStringUid } from "@online/get-string-uid";
 
 // Generate a UID for a string
-const uid = getStringUid('Hello, World!');
+const uid = getStringUid("Hello, World!");
 console.log(uid); // Will always return the same number for 'Hello, World!'
 ```
 
@@ -45,7 +48,9 @@ Generates a unique identifier for a given string based on its content.
 
 ## Important Notes
 
-⚠️ **Security Notice**: This function is not cryptographically secure and should not be used for:
+⚠️ **Security Notice**: This function is not cryptographically secure and should
+not be used for:
+
 - Cryptographic purposes
 - Security-sensitive applications
 - Hash generation where collision resistance is required
@@ -53,6 +58,7 @@ Generates a unique identifier for a given string based on its content.
 ## Technical Details
 
 The function works by:
+
 1. Iterating through each character in the input string
 2. Converting characters to their ASCII codes
 3. Performing arithmetic operations based on character position
